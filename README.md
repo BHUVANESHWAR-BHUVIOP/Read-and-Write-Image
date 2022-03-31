@@ -19,60 +19,81 @@ Use imwrite(filename, image) to write the image.
 ### Step5:
 End the program and close the output image windows.
 ## Program:
+```
 ### Developed By:
 ### Register Number: 
 i) #To Read,display the image
 ```
-  import cv2
-
+# Color
+import cv2
+spd_mn=cv2.imread('Spider.jpg',1)
+cv2.imshow('SpiderMan',spd_mn)
+cv2.waitKey(0)
+# Grayscale
+import cv2
+spd_mn=cv2.imread('Spider.jpg',0)
+cv2.imshow('Grayscale',spd_mn)
+cv2.waitKey(0)
 ```
 ii) #To write the image
 ```
-
-
-
+import cv2
+spd_mn=cv2.imread('Spider.jpg',1)
+cv2.imwrite('Spider Man.jpg',spd_mn)
 ```
 iii) #Find the shape of the Image
-``python3
-
-
-
+``
+import cv2
+spd_mn=cv2.imread('Spider.jpg',1)
+print(spd_mn.shape)
 ```
 iv) #To access rows and columns
-```python3
-
-
-
+```
+import cv2
+spd_mn=cv2.imread('Spider.jpg',1)
+import random
+for i in range(200):
+    for j in range(spd_mn.shape[1]):
+        spd_mn[i][j] = [random.randint(0,100),random.randint(0,100),random.randint(0,100)]
+cv2.imshow('Spider Man',spd_mn)
+cv2.waitKey(0)
 ```
 v) #To cut and paste portion of image
-```python3
-
-
-
+```
+import cv2
+spd_mn=cv2.imread('Spider.jpg',1)
+img = spd_mn[300:400:,300:400]
+spd_mn[50:150,50:150] = img
+cv2.imshow('Cut Selection',spd_mn)
+cv2.waitKey(0)
 ```
 
 ## Output:
 
 ### i) Read and display the image
-
+![Output Img](Output1.jpg)
+![Output Img](Output2.jpg)
 <br>
 <br>
 
 ### ii)Write the image
-
+![Output Img](Output3.jpg)
+![Output Img](Output4.jpg)
 <br>
 <br>
 
 ### iii)Shape of the Image
-
+![Output Img](Output5.jpg)
 <br>
 <br>
 
 ### iv)Access rows and columns
+![Output Img](Output6.jpg)
 <br>
 <br>
 
 ### v)Cut and paste portion of image
+![Output Img](Output7.jpg)
 <br>
 <br>
 
