@@ -42,14 +42,15 @@ cv2.waitKey(0)
 ```
 
 ii) #To write the image
-```
+
 ```
 import cv2
 spd_mn=cv2.imread('Spider.jpg',1)
 cv2.imwrite('Spider Man.jpg',spd_mn)
 ```
+
 iii) #Find the shape of the Image
-``
+```
 import cv2
 spd_mn=cv2.imread('Spider.jpg',1)
 print(spd_mn.shape)
