@@ -20,20 +20,26 @@ Use imwrite(filename, image) to write the image.
 End the program and close the output image windows.
 ## Program:
 ```
-### Developed By:
-### Register Number: 
+### Developed By: BHUVANESHWAR V
+### Register Number: 212221240009
+
 i) #To Read,display the image
-```
+
 # Color
+
 import cv2
 spd_mn=cv2.imread('Spider.jpg',1)
 cv2.imshow('SpiderMan',spd_mn)
 cv2.waitKey(0)
+```
+```
 # Grayscale
+
 import cv2
 spd_mn=cv2.imread('Spider.jpg',0)
 cv2.imshow('Grayscale',spd_mn)
 cv2.waitKey(0)
+```
 ```
 ii) #To write the image
 ```
