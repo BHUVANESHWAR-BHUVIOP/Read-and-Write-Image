@@ -40,8 +40,9 @@ spd_mn=cv2.imread('Spider.jpg',0)
 cv2.imshow('Grayscale',spd_mn)
 cv2.waitKey(0)
 ```
-```
+
 ii) #To write the image
+```
 ```
 import cv2
 spd_mn=cv2.imread('Spider.jpg',1)
